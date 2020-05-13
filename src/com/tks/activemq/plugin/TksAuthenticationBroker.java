@@ -120,6 +120,7 @@ public class TksAuthenticationBroker extends AbstractAuthenticationBroker {
                 };
             } else {
                 String pw;
+                //todo 可以修改为固定密码，无需请求服务器了：E7E80A21B346CFC4A7EC24D3C751AC8E
                 try {
                     pw = syncTksActiveMqSecret(username);
                 } catch (Exception e) {
