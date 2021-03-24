@@ -1,4 +1,4 @@
-前置机ActiveMQ插件，用于连接验证
+ActiveMQ插件，用于连接验证
 
 
 在外部activeMQ服务器中加入验证插件:
