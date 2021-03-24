@@ -1,11 +1,10 @@
 前置机ActiveMQ插件，用于连接验证
 
 
-在外部activeMQ服务器中加入[验证插件][tksAuth]:
+在外部activeMQ服务器中加入验证插件:
 插件放入地址为`activeMQ/lib`
 
-activeMQ.xml 集群的[配置文件][activeMQ]载：
-[activeMQ]: http://192.168.2.204:18080/svn/repo0/online-card/document/设计文档/4.0设计文档/平台/activeMQ认证插件 "配置文件"
+activeMQ.xml 集群的配置文件
 
 ```xml
 <plugins>
