@@ -124,7 +124,7 @@ public class TksAuthenticationBroker extends AbstractAuthenticationBroker {
                 try {
                     pw = syncTksActiveMqSecret(username);
                 } catch (Exception e) {
-                    throw new SecurityException("同步易上学ActiveMQ密钥信息出错!");
+                    throw new SecurityException("同步ActiveMQ密钥信息出错!");
                 }
                 log.debug("username:" + username + "-------------password:" + password + "-------------pw:" + pw);
                 if (null != pw && pw.equals(password)) {
@@ -152,7 +152,7 @@ public class TksAuthenticationBroker extends AbstractAuthenticationBroker {
         Map<String, String> params = new HashMap<>();
         params.put("username", username);
         String res = HttpUtils.doPost(secretUrl, params);
-        log.debug("获取易上学ActiveMQ 密钥信息：params=" + params + " res:" + res + " secretUrl:" + secretUrl);
+        log.debug("获取ActiveMQ 密钥信息：params=" + params + " res:" + res + " secretUrl:" + secretUrl);
         return res;
     }
 }

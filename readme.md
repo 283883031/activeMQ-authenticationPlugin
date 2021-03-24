@@ -4,8 +4,6 @@
 在外部activeMQ服务器中加入[验证插件][tksAuth]:
 插件放入地址为`activeMQ/lib`
 
-[tksAuth]: http://192.168.2.204:18080/svn/repo0/online-card/document/设计文档/4.0设计文档/平台/activeMQ认证插件/TksAuthenticationPlugin.jar "验证插件"
-
 activeMQ.xml 集群的[配置文件][activeMQ]载：
 [activeMQ]: http://192.168.2.204:18080/svn/repo0/online-card/document/设计文档/4.0设计文档/平台/activeMQ认证插件 "配置文件"
 
@@ -39,5 +37,5 @@ activeMQ.xml 集群的[配置文件][activeMQ]载：
 ```java
 2018-01-03 14:34:47,167 | INFO  | info=======ConnectionInfo {commandId = 1, responseRequired = true, connectionId = ID:zhujing-2.local-53190-1514961286996-1:1, clientId = ID:zhujing-2.local-53190-1514961286996-0:1, clientIp = tcp://127.0.0.1:53191, userName = A2-CE-C8-80-52-64, password = *****, brokerPath = null, brokerMasterConnector = false, manageable = true, clientMaster = true, faultTolerant = true, failoverReconnect = false} | org.apache.activemq.advisory.AdvisoryBroker | ActiveMQ Transport: tcp:///127.0.0.1:53191@61616
 2018-01-03 14:34:47,170 | INFO  | username:A2-CE-C8-80-52-64 | com.tks.activemq.plugin.HttpUtils | ActiveMQ Transport: tcp:///127.0.0.1:53191@61616
-2018-01-03 14:34:47,176 | INFO  | 获取易上学ActiveMQ 密钥信息：params={username=A2-CE-C8-80-52-64} res:bd1e500f-6b81-47c5-a066-7c324e31affa | org.apache.activemq.advisory.AdvisoryBroker | ActiveMQ Transport: tcp:///127.0.0.1:53191@61616
+2018-01-03 14:34:47,176 | INFO  | 获取ActiveMQ 密钥信息：params={username=A2-CE-C8-80-52-64} res:bd1e500f-6b81-47c5-a066-7c324e31affa | org.apache.activemq.advisory.AdvisoryBroker | ActiveMQ Transport: tcp:///127.0.0.1:53191@61616
 2018-01-03 14:34:47,178 | INFO  | username:A2-CE-C8-80-52-64-------------password:bd1e500f-6b81-47c5-a066-7c324e31affa-------------pw:bd1e500f-6b81-47c5-a066-7c324e31affa | org.apache.activemq.advisory.AdvisoryBroker | ActiveMQ Transport: tcp:///127.0.0.1:53191@61616
