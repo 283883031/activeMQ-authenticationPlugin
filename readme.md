@@ -28,9 +28,9 @@ activeMQ.xml 集群的配置文件
              </plugins>
 ```
 代码块中这段为插件配置。
-`secretUrl `密钥验证服务器地址。
-`allowedMac` 无需验证的客户端MAC地址(可以提供给web-api使用)
-`allowedIp`无需验证的客户端IP地址(可以提供给web-api使用)
+`secretUrl `密钥验证服务器地址。这个需要自己开发，详情见AbstractAuthenticationBroker，就是发送用户名，获取密码，然后进行验证。
+`allowedMac` 无需验证的客户端MAC地址
+`allowedIp`无需验证的客户端IP地址
 
 3.查看activeMQ服务器的data文件夹下的日志文件
 ```java
